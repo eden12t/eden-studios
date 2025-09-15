@@ -371,3 +371,21 @@ body {
 .price {
   color: #00ccaa;        /* teal highlight stays */
 }
+
+/* ===== Brighter Text Inside Blocks ===== */
+.package-card {
+  background: #333;       /* keep block dark gray */
+  color: #f5f5f5;         /* brighter text */
+}
+
+.package-card h2 {
+  color: #fff;            /* headings pure white */
+}
+
+.package-card p {
+  color: #ddd;            /* body text lighter gray */
+}
+
+.price {
+  color: #00ccaa;         /* keep teal highlight */
+}
