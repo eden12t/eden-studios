@@ -429,3 +429,12 @@ body {
     margin: 0 auto;
   }
 }
+
+/* ===== Tighten Space Below Hero Button ===== */
+.hero {
+  padding-bottom: 10px;   /* less gap after hero */
+}
+
+.hero .btn {
+  margin-bottom: 15px;    /* small gap before blocks */
+}
