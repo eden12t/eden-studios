@@ -1,3 +1,8 @@
+/* Smooth scrolling for the whole site */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -43,11 +48,11 @@ h2 {
 
 main {
   padding: 20px;
-  flex: 1;
+  flex: 1; /* ensures main fills remaining space to push footer down */
 }
 
 footer {
-  margin-top: auto;
+  margin-top: auto; /* always at the bottom */
   padding: 15px 0;
   text-align: center;
   font-size: 0.9rem;
@@ -55,7 +60,7 @@ footer {
   background: #111;
 }
 
-/* Make all links teal instead of default blue */
+/* Make all standard links teal */
 a {
   color: #00ffcc;
   text-decoration: none;
@@ -66,6 +71,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Teal buttons */
 a.button {
   display: inline-block;
   padding: 10px 20px;
