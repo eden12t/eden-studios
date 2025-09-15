@@ -10,8 +10,9 @@
   <header>
     <nav class="navbar">
       <div class="logo">eden studios</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
         <a href="services.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
@@ -26,18 +27,20 @@
       <button class="btn" onclick="location.href='portfolio.html'">View Our Work</button>
     </section>
 
-    <section class="packages-grid">
-      <div class="package-card">
-        <h2>Our Mission</h2>
-        <p>To help local businesses grow by giving them a clean, professional online presence without breaking the budget.</p>
+    <!-- About Section -->
+    <section class="about-grid">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At Eden Studios, we specialize in building websites that are clean, responsive, and tailored to your business. 
+          Whether you’re just starting or looking to refresh your brand, we make the process simple and affordable.
+        </p>
       </div>
-      <div class="package-card">
-        <h2>Our Approach</h2>
-        <p>We focus on mobile-first design, search engine optimization, and user-friendly layouts that convert visitors into customers.</p>
-      </div>
-      <div class="package-card">
-        <h2>Why Choose Us</h2>
-        <p>Affordable, transparent pricing with websites built to match your brand, delivered quickly with ongoing support options.</p>
+      <div class="about-list">
+        <p>✔️ Mobile-friendly design</p>
+        <p>✔️ Optimized for Google search</p>
+        <p>✔️ Transparent pricing</p>
+        <p>✔️ Ongoing support options</p>
       </div>
     </section>
   </main>
@@ -45,5 +48,11 @@
   <footer>
     <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
