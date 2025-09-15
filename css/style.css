@@ -32,8 +32,8 @@ nav a:hover {
 }
 
 section {
-  padding: 40px 20px;   /* tighter vertical spacing */
-  margin: 20px auto;    /* closer between sections */
+  padding: 40px 20px;
+  margin: 20px auto;
   max-width: 900px;
 }
 
@@ -57,7 +57,7 @@ section li {
 }
 
 section a {
-  color: #00ffc8;       /* match accent color */
+  color: #00ffc8;
   text-decoration: none;
   font-weight: 600;
 }
@@ -87,4 +87,42 @@ footer {
   background: #1c1c1c;
   margin-top: 40px;
   color: #888;
+}
+
+/* -------------------- */
+/* Responsive for Mobile */
+/* -------------------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    margin-top: 5px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  section {
+    padding: 20px 15px;
+    margin: 10px auto;
+  }
+
+  section h2 {
+    font-size: 1.3em;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
