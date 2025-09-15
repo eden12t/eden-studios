@@ -49,6 +49,7 @@ h1 {
 main {
   flex: 1;
   padding: 40px;
+  padding-top: 80px; /* keeps content clear of sticky header */
 }
 
 footer {
