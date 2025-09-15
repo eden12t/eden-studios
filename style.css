@@ -494,3 +494,39 @@ body {
   align-self: flex-start;
   margin-top: 10px;
 }
+
+/* ===== Compact Contact Page ===== */
+.contact-form {
+  padding: 20px;
+}
+
+.contact-form form {
+  max-width: 450px;  /* smaller form */
+  margin: 0 auto 20px auto;
+}
+
+.packages-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.package-card {
+  flex: 1;
+  max-width: 250px; /* shrink cards */
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+  .contact-form form {
+    max-width: 100%;
+  }
+  .packages-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .package-card {
+    max-width: 100%;
+  }
+}
