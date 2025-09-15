@@ -87,3 +87,26 @@ a.button {
 a.button:hover {
   background-color: #00ccaa;
 }
+
+/* Mobile-specific tweaks */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;       /* stack nav links vertically */
+    gap: 10px;
+  }
+
+  main {
+    padding: 15px;               /* reduce padding on small screens */
+  }
+
+  h2 {
+    font-size: 1.5rem;           /* smaller headings for mobile */
+    margin-top: 30px;
+  }
+
+  a.button {
+    width: 100%;                 /* full-width for touch */
+    text-align: center;
+    padding: 12px 0;
+  }
+}
