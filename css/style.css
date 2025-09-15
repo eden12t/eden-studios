@@ -7,7 +7,7 @@ body {
 
 header {
   background: linear-gradient(to right, #1c1c1c, #2c2c2c);
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -17,13 +17,13 @@ header h1 {
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 12px;
   font-weight: 600;
 }
 
@@ -32,28 +32,28 @@ nav a:hover {
 }
 
 section {
-  padding: 40px 20px;
-  margin: 20px auto;
+  padding: 25px 15px;   /* reduced from 40px */
+  margin: 12px auto;    /* reduced from 20px */
   max-width: 1200px;
 }
 
 section h2 {
   color: #00ffc8;
-  margin-bottom: 15px;
+  margin-bottom: 10px;  /* tighter heading space */
 }
 
 section p,
 section ul {
   font-size: 1.05em;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 section ul {
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 section li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 section a {
@@ -68,13 +68,13 @@ section a:hover {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 22px;
   background: #00ffc8;
   color: #121212;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 5px;
-  margin-top: 15px;
+  border-radius: 6px;
+  margin-top: 12px;
 }
 
 .button:hover {
@@ -83,9 +83,9 @@ section a:hover {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   background: #1c1c1c;
-  margin-top: 40px;
+  margin-top: 25px;
   color: #888;
 }
 
@@ -107,25 +107,25 @@ footer {
   }
 
   nav a {
-    display: block;        /* stack links vertically */
-    margin: 10px 0;
+    display: block;
+    margin: 8px 0;
   }
 
   section {
-    padding: 15px 12px;    /* tighter spacing */
-    margin: 8px auto;
+    padding: 15px 12px;   /* much tighter on mobile */
+    margin: 6px auto;
   }
 
   section h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin-bottom: 8px;
   }
 
   .button {
     width: 100%;
     text-align: center;
-    box-sizing: border-box;
-    font-size: 1.3em;      /* bigger button text */
-    padding: 16px 0;       /* taller buttons */
-    border-radius: 8px;    /* rounder corners for touch */
+    font-size: 1.2em;
+    padding: 14px 0;
+    border-radius: 8px;
   }
 }
