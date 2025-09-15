@@ -325,3 +325,9 @@ body {
 .price {
   color: #00ccaa;         /* keep teal highlight */
 }
+
+/* ===== Global Hero Spacing for All Pages ===== */
+.hero {
+  padding-top: 15px;     /* pull heading closer to navbar */
+  padding-bottom: 70px;  /* add breathing room below */
+}
