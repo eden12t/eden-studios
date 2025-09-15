@@ -3,54 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eden Studios - Services</title>
+  <title>Our Services - Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">eden studios</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Our Website Packages</h1>
-      <p>Simple, flexible options for businesses of all sizes. Mobile-friendly and optimized for your success.</p>
-      <button class="btn" onclick="location.href='contact.html'">Get Started</button>
-    </section>
+  <section class="hero">
+    <h1>Our Website Packages</h1>
+    <p>Simple, flexible options for businesses of all sizes. Mobile-friendly and optimized for success.</p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </section>
 
-    <section class="packages-grid">
-      <div class="package-card">
-        <h2>Basic Website</h2>
-        <p class="price">Starting at <strong>$400</strong></p>
+  <section class="services">
+    <div class="container">
+      <div class="card">
+        <h3>Basic Website</h3>
+        <p><strong>Starting at $400</strong></p>
         <p>1–2 pages (homepage + contact). Includes business info, logo and colors, and a mobile-friendly layout.</p>
       </div>
-
-      <div class="package-card featured">
-        <h2>Standard Website</h2>
-        <p class="price">Starting at <strong>$600</strong></p>
-        <p>3–4 pages (home, about, services/menu, contact). Customized design, SEO optimized, responsive on all devices.</p>
+      <div class="card highlight">
+        <h3>Standard Website</h3>
+        <p><strong>Starting at $600</strong></p>
+        <p>3–4 pages (home, about, services/menu, contact). Customized design, SEO optimized, and responsive on all devices.</p>
       </div>
-
-      <div class="package-card">
-        <h2>Premium Website</h2>
-        <p class="price">Starting at <strong>$1000</strong></p>
+      <div class="card">
+        <h3>Premium Website</h3>
+        <p><strong>Starting at $1000</strong></p>
         <p>5+ pages with advanced features like blog, portfolio, or gallery. Includes interactive forms and ongoing support.</p>
       </div>
-    </section>
-
-    <p class="disclaimer"><em>*Prices are starting points. Final pricing may change depending on features and customization.</em></p>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Eden Studios. All rights reserved.</p>
+    <p>&copy; 2025 Eden Studios. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
