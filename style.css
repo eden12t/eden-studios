@@ -1,49 +1,50 @@
-/* === Global Styles === */
-body {
+/* ===== Global Styles ===== */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #121212;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* === Navbar === */
-.navbar {
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+header {
+  background: #1e1e1e;
+  padding: 20px 40px;
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background: #1a1a1a;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: lowercase;
-  color: #00e6b8;
+  color: #00d1b2;
 }
 
 .nav-links {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 20px;
 }
 
-.nav-links li {
-  display: inline-block;
-}
-
-.nav-links a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links a.active,
-.nav-links a:hover {
-  color: #00e6b8;
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #00d1b2;
 }
 
 .menu-toggle {
@@ -53,70 +54,135 @@ body {
   color: #fff;
 }
 
-/* === Hero Section === */
+/* ===== Hero Section ===== */
 .hero {
   text-align: center;
-  margin: 30px auto 20px auto;
   padding: 40px 20px;
+  background: #1e1e1e;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  color: #fff;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #ccc;
   margin-bottom: 20px;
+  color: #ccc;
 }
 
-.hero .btn {
+.btn {
   display: inline-block;
-  padding: 12px 28px;
-  font-size: 1rem;
-  color: #0f0f0f;
-  background: #00e6b8;
+  padding: 10px 20px;
+  border: 2px solid #00d1b2;
   border-radius: 25px;
+  color: #00d1b2;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.hero .btn:hover {
-  background: #00c9a6;
+.btn:hover {
+  background: #00d1b2;
+  color: #1e1e1e;
 }
 
-/* === About Section === */
-.about {
-  background: #1e1e1e;
-  padding: 40px 20px;
+/* ===== Services / Portfolio Blocks ===== */
+.services,
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
 }
 
-.about .container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.service-item,
+.portfolio-item,
+.contact-item,
+.faq-item {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.service-item h3,
+.portfolio-item h3,
+.contact-item h3,
+.faq-item h3 {
+  margin-bottom: 10px;
   color: #fff;
 }
 
-.about p {
+.service-item p,
+.portfolio-item p,
+.contact-item p,
+.faq-item p {
   color: #ccc;
   line-height: 1.6;
-  font-size: 1.1rem;
 }
 
-/* === Footer === */
+/* ===== Contact Form ===== */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #00d1b2;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+form button {
+  padding: 10px;
+  border: 2px solid #00d1b2;
+  border-radius: 25px;
+  background: transparent;
+  color: #00d1b2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #00d1b2;
+  color: #1e1e1e;
+}
+
+/* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 20px;
-  background: #1a1a1a;
-  color: #999;
+  background: #1e1e1e;
+  color: #aaa;
   font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* ===== Mobile Navbar ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #1e1e1e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
