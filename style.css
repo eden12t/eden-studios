@@ -331,3 +331,9 @@ body {
   padding-top: 15px;     /* pull heading closer to navbar */
   padding-bottom: 70px;  /* add breathing room below */
 }
+
+/* ===== Tighter Hero Spacing Across All Pages ===== */
+.hero {
+  padding-top: 5px;     /* very close to navbar */
+  padding-bottom: 30px; /* less space before next section */
+}
