@@ -311,3 +311,17 @@ body {
 .price {
   color: #00ccaa;
 }
+
+/* ===== Brighten Card Text ===== */
+.package-card {
+  background: #333;
+  color: #ddd;            /* brighter body text */
+}
+
+.package-card h2 {
+  color: #fff;            /* titles pure white */
+}
+
+.price {
+  color: #00ccaa;         /* keep teal highlight */
+}
