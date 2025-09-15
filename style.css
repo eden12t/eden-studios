@@ -343,3 +343,15 @@ body {
   border: 2px solid #00ccaa;   /* teal outline */
   transform: scale(1.02);      /* subtle pop */
 }
+
+/* ===== Reset All Cards ===== */
+.package-card {
+  border: none;            /* remove teal border from all */
+  transform: none;         /* remove scaling */
+}
+
+/* ===== Keep Highlight for Standard Website Only ===== */
+.featured {
+  border: 2px solid #00ccaa;
+  transform: scale(1.05);
+}
