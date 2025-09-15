@@ -1,806 +1,118 @@
-/* ===== Global ===== */
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%}
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;background:#fff;color:#111}
-h1{font-size:clamp(2rem,4vw,3rem)}
-h2{font-size:clamp(1.4rem,3vw,2rem)}
-h3{font-size:clamp(1.1rem,2.4vw,1.4rem)}
-p,li{font-size:clamp(1rem,2vw,1.05rem)}
-
-/* ===== Hero ===== */
-.hero{text-align:center;padding:60px 20px;background:#222;color:#fff}
-.hero p{color:#ccc;max-width:640px;margin:10px auto}
-
-/* ===== Packages Grid ===== */
-.packages-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:40px 20px;background:#f7f7f7}
-.package-card{background:#fff;border-radius:12px;box-shadow:0 4px 8px rgba(0,0,0,.1);width:300px;padding:25px;text-align:center;transition:transform .2s,box-shadow .2s}
-.package-card:hover{transform:translateY(-5px);box-shadow:0 8px 16px rgba(0,0,0,.15)}
-.package-card h2{margin-top:0;color:#111}
-.price{font-size:1.2rem;color:#00ccaa;margin:15px 0}
-.package-card p{color:#555;margin-bottom:20px}
-.featured{border:2px solid #00ccaa;transform:scale(1.05)}
-
-/* ===== Buttons ===== */
-.btn{background:#00ccaa;color:#fff;border:none;padding:10px 20px;border-radius:6px;font-weight:700;cursor:pointer;transition:background .3s,box-shadow .3s}
-.btn:hover{background:#009977;box-shadow:0 0 10px #00ccaa}
-
-/* ===== Nav/Footer ===== */
-nav a{color:#ddd;text-decoration:none;margin:0 10px}
-nav a:hover{color:#00ccaa}
-footer{color:#777;text-align:center;padding:16px}
-
-/* ===== Hero Section ===== */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: #222;
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
   color: #fff;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1rem;
-  color: #ccc;
-  max-width: 600px;
-  margin: 0 auto 20px;
-}
-
-/* ===== Packages Grid ===== */
-.packages-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 60px 20px;
-  background: #f7f7f7;
-}
-
-.package-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 300px;
-  padding: 30px 20px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.package-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
-
-.package-card img {
-  width: 60px;
-  margin-bottom: 15px;
-}
-
-.price {
-  font-size: 1.2rem;
-  color: #00ccaa;
-  margin: 15px 0;
-}
-
-.featured {
-  border: 2px solid #00ccaa;
-  transform: scale(1.05);
-}
-
-/* ===== Button ===== */
-.btn {
-  background: #00ccaa;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
-}
-
-.btn:hover {
-  background: #009977;
-  box-shadow: 0 0 10px #00ccaa;
-}
-
-.disclaimer {
-  text-align: center;
-  margin: 20px;
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* ===== Navbar ===== */
+/* === Navbar === */
 .navbar {
-  background: #222;
-  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 15px 30px;
+  background: #1a1a1a;
 }
 
 .logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-transform: lowercase;
-  letter-spacing: 1px;
+  color: #00e6b8;
 }
 
 .nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #00ccaa;
-}
-
-/* ===== Hero Section (adjusted) ===== */
-.hero {
-  text-align: center;
-  padding: 50px 20px;   /* reduced padding so text is higher */
-  background: #222;
-  color: #fff;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #ccc;
-  max-width: 600px;
-  margin: 0 auto 25px;
-}
-
-/* ===== Button (bigger) ===== */
-.btn {
-  background: #00ccaa;
-  color: #fff;
-  border: none;
-  padding: 16px 36px;   /* larger button */
-  border-radius: 30px;  /* more rounded */
-  font-weight: bold;
-  font-size: 1.1rem;    /* bigger text */
-  cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
-}
-
-.btn:hover {
-  background: #009977;
-  box-shadow: 0 0 12px #00ccaa;
-}
-
-/* ===== Adjusted Hero Spacing ===== */
-.hero {
-  text-align: center;
-  padding: 30px 20px;   /* tighter spacing */
-  background: #222;
-  color: #fff;
-}
-
-/* ===== Dark Mode Layout ===== */
-body {
-  background: #222;
-  color: #fff;
-}
-
-.hero {
-  background: #222;
-  color: #fff;
-}
-
-.packages-grid {
-  background: #222;   /* match hero */
-  padding: 60px 20px;
-}
-
-.package-card {
-  background: #333;   /* slightly lighter so cards stand out */
-  color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-.package-card h2 {
-  color: #fff;
-}
-
-.price {
-  color: #00ccaa;
-}
-
-.disclaimer {
-  color: #aaa;
-}
-
-/* ===== Dark Background, White Cards ===== */
-body {
-  background: #222;
-  color: #fff;
-}
-
-.hero {
-  background: #222;
-  color: #fff;
-}
-
-.packages-grid {
-  background: #222;
-  padding: 60px 20px;
-}
-
-.package-card {
-  background: #fff;       /* white cards */
-  color: #111;            /* dark text inside cards */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-.package-card h2 {
-  color: #111;
-}
-
-.price {
-  color: #00ccaa;
-}
-
-.disclaimer {
-  color: #aaa;
-}
-
-/* Contact links teal */
-.package-card a {
-  color: #00ccaa;
-  text-decoration: none;
-  font-weight: bold;
-}
-.package-card a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Outline Style Buttons ===== */
-.btn {
-  background: transparent;       /* no fill */
-  color: #00ccaa;                /* teal text */
-  border: 2px solid #00ccaa;     /* teal border */
-  padding: 16px 36px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn:hover {
-  background: #00ccaa;           /* fill teal on hover */
-  color: #fff;                   /* text switches to white */
-  box-shadow: 0 0 12px #00ccaa;
-}
-
-/* ===== Lighter Gray Cards ===== */
-.package-card {
-  background: #333;        /* lighter gray box */
-  color: #eee;             /* light gray text */
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
-
-.package-card h2 {
-  color: #fff;             /* keep titles bright */
-}
-
-.price {
-  color: #00ccaa;
-}
-
-/* ===== Brighten Card Text ===== */
-.package-card {
-  background: #333;
-  color: #ddd;            /* brighter body text */
-}
-
-.package-card h2 {
-  color: #fff;            /* titles pure white */
-}
-
-.price {
-  color: #00ccaa;         /* keep teal highlight */
-}
-
-/* ===== Global Hero Spacing for All Pages ===== */
-.hero {
-  padding-top: 15px;     /* pull heading closer to navbar */
-  padding-bottom: 70px;  /* add breathing room below */
-}
-
-/* ===== Tighter Hero Spacing Across All Pages ===== */
-.hero {
-  padding-top: 5px;     /* very close to navbar */
-  padding-bottom: 30px; /* less space before next section */
-}
-
-/* ===== Highlight All Cards in Teal ===== */
-.package-card {
-  border: 2px solid #00ccaa;   /* teal outline */
-  transform: scale(1.02);      /* subtle pop */
-}
-
-/* ===== Reset All Cards ===== */
-.package-card {
-  border: none;            /* remove teal border from all */
-  transform: none;         /* remove scaling */
-}
-
-/* ===== Keep Highlight for Standard Website Only ===== */
-.featured {
-  border: 2px solid #00ccaa;
-  transform: scale(1.05);
-}
-
-/* ===== Lighter Cards for Contrast ===== */
-.package-card {
-  background: #f0f0f0;   /* light gray card */
-  color: #111;           /* dark text inside */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-}
-
-.package-card h2 {
-  color: #000;           /* strong black for titles */
-}
-
-.price {
-  color: #00ccaa;        /* teal highlight stays */
-}
-
-/* ===== Brighter Text Inside Blocks ===== */
-.package-card {
-  background: #333;       /* keep block dark gray */
-  color: #f5f5f5;         /* brighter text */
-}
-
-.package-card h2 {
-  color: #fff;            /* headings pure white */
-}
-
-.package-card p {
-  color: #ddd;            /* body text lighter gray */
-}
-
-.price {
-  color: #00ccaa;         /* keep teal highlight */
-}
-
-/* ===== Mobile Optimization ===== */
-@media (max-width: 768px) {
-  /* Navbar */
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 15px 20px;
-  }
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  /* Hero */
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 0.95rem;
-  }
-  .btn {
-    width: 100%;              /* full width button */
-    max-width: 280px;
-    font-size: 1rem;
-    padding: 14px 20px;
-  }
-
-  /* Packages/Portfolio/Contact Cards */
-  .packages-grid {
-    flex-direction: column;   /* stack vertically */
-    gap: 20px;
-  }
-  .package-card {
-    width: 100%;
-    max-width: 95%;
-    margin: 0 auto;
-  }
-}
-
-/* ===== Tighten Space Below Hero Button ===== */
-.hero {
-  padding-bottom: 10px;   /* less gap after hero */
-}
-
-.hero .btn {
-  margin-bottom: 15px;    /* small gap before blocks */
-}
-
-/* ===== Ultra Tight Spacing Below Hero ===== */
-.hero {
-  padding-bottom: 0px;   /* remove extra space */
-}
-
-.hero .btn {
-  margin-bottom: 5px;    /* tiny gap before blocks */
-}
-
-/* ===== Ultra Tight Spacing: Navbar → Hero Heading ===== */
-.hero {
-  padding-top: 0px;    /* hero starts right under navbar */
-}
-
-/* ===== Hug Hero Heading to Navbar ===== */
-.hero {
-  padding-top: 0 !important;   /* remove all top spacing */
-  margin-top: -10px;           /* pull section even closer */
-}
-
-/* ===== Contact Form Dark Theme ===== */
-.contact-form form {
-  background: #2a2a2a;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  max-width: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin: 0 auto 40px auto; /* center form and add space below */
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: #333;
-  color: #eee;
-  border: 1px solid #444;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #00ccaa;  /* teal focus */
-  outline: none;
-}
-
-.contact-form button {
-  align-self: flex-start;
-  margin-top: 10px;
-}
-
-/* ===== Compact Contact Page ===== */
-.contact-form {
-  padding: 20px;
-}
-
-.contact-form form {
-  max-width: 450px;  /* smaller form */
-  margin: 0 auto 20px auto;
-}
-
-.packages-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 20px;
-}
-
-.package-card {
-  flex: 1;
-  max-width: 250px; /* shrink cards */
-}
-
-/* ===== Mobile Optimization ===== */
-@media (max-width: 768px) {
-  .contact-form form {
-    max-width: 100%;
-  }
-  .packages-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .package-card {
-    max-width: 100%;
-  }
-}
-
-/* ===== Navbar ===== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background: #222;
-  color: #fff;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: #00ccaa;
-}
-
-/* ===== Mobile Menu ===== */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    width: 100%;
-    padding: 15px 0;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 1000;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 10px 20px;
-    border-top: 1px solid #333;
-  }
-}
-
-/* ===== Mobile Slide-In Menu ===== */
-@media (max-width: 768px) {
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    background: #222;
-    width: 250px;
-    height: 100vh;
-    padding-top: 60px;
-    position: fixed;
-    top: 0;
-    right: -250px;             /* hidden off-screen */
-    transition: right 0.3s ease;
-    z-index: 1000;
-  }
-
-  .nav-links.active {
-    right: 0;                  /* slides into view */
-  }
-
-  .nav-links a {
-    padding: 15px 20px;
-    border-bottom: 1px solid #333;
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 1.8rem;
-    cursor: pointer;
-    z-index: 1100;
-  }
-}
-
-/* ===== About Section (Centered) ===== */
-.about-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-text h2 {
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.about-text p {
-  color: #ddd;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-.about-list p {
-  background: #2a2a2a;
-  color: #00ccaa;
-  font-weight: bold;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  transition: transform 0.2s ease;
-}
-
-.about-list p:hover {
-  transform: translateY(-3px);
-}
-EOFcat >> style.css <<'EOF'
-
-/* ===== About Section (Centered) ===== */
-.about-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-text h2 {
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.about-text p {
-  color: #ddd;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-.about-list p {
-  background: #2a2a2a;
-  color: #00ccaa;
-  font-weight: bold;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  transition: transform 0.2s ease;
-}
-
-.about-list p:hover {
-  transform: translateY(-3px);
-}
-
-/* ===== About Section Updated ===== */
-.about-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 30px 20px;   /* reduced spacing */
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-text h2 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.about-text p {
-  color: #ddd;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
-
-.about-list p {
-  background: #2a2a2a;
-  color: #ddd;
-  font-weight: normal;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
-
-/* ===== FAQ Section ===== */
-.faq {
-  max-width: 800px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.faq-item {
-  background: #2a2a2a;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-.faq-item h3 {
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.faq-item p {
-  color: #ccc;
-  line-height: 1.6;
-}
-
-/* ===== Clean Navbar Links ===== */
-.nav-links {
-  list-style: none;        /* remove dots */
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;               /* space evenly between links */
+  gap: 20px;
 }
 
 .nav-links li {
-  display: inline-block;   /* inline look */
+  display: inline-block;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: #fff;
-  transition: color 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a.active,
 .nav-links a:hover {
-  color: #00ccaa;          /* teal highlight */
+  color: #00e6b8;
 }
 
-/* ===== FAQ Section ===== */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  margin: 30px auto 20px auto;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  color: #0f0f0f;
+  background: #00e6b8;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #00c9a6;
+}
+
+/* === About Section === */
+.about {
+  background: #1e1e1e;
+  padding: 40px 20px;
+}
+
+.about .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* === FAQ Section === */
 .faq {
   max-width: 800px;
   margin: 40px auto;
@@ -825,4 +137,13 @@ EOFcat >> style.css <<'EOF'
 .faq-item p {
   color: #ccc;
   line-height: 1.6;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #999;
+  font-size: 0.9rem;
 }
