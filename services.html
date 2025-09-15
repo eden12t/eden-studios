@@ -3,44 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eden Studios - Services</title>
+  <title>Our Services - Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Eden Studios</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
+    <nav class="navbar">
+      <div class="logo">eden studios</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <h2>Our Services</h2>
-
-    <section>
-      <h3>Basic Website</h3>
-      <p>A simple, professional website ideal for getting your business online quickly. Perfect for businesses that need a few essential pages to show services, contact info, and hours. Mobile-friendly design ensures your customers can reach you on any device.</p>
-      <a href="contact.html" class="button">Get a Quote</a>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Our Website Packages</h1>
+      <p>Simple, flexible options for businesses of all sizes. Mobile-friendly and optimized for your success.</p>
+      <button class="btn">Get Started</button>
     </section>
 
-    <section>
-      <h3>Standard Website</h3>
-      <p>Our most popular option. Includes up to 5 pages with custom styling and a contact form so customers can easily get in touch. Fully responsive and optimized layout ensures your business looks great on phones, tablets, and desktops.</p>
-      <a href="contact.html" class="button">Get a Quote</a>
+    <!-- Packages Grid -->
+    <section class="packages-grid">
+      <div class="package-card">
+        <img src="https://img.icons8.com/ios/100/web.png" alt="Basic Icon" />
+        <h2>Basic Website</h2>
+        <p class="price">Starting at <strong>$400</strong></p>
+        <p>1–2 pages (homepage + contact). Includes business info, logo and colors, and a mobile-friendly layout.</p>
+      </div>
+
+      <div class="package-card featured">
+        <img src="https://img.icons8.com/ios/100/layers.png" alt="Standard Icon" />
+        <h2>Standard Website</h2>
+        <p class="price">Starting at <strong>$600</strong></p>
+        <p>3–4 pages (home, about, services/menu, contact). Customized design, SEO optimized, responsive on all devices.</p>
+      </div>
+
+      <div class="package-card">
+        <img src="https://img.icons8.com/ios/100/rocket.png" alt="Premium Icon" />
+        <h2>Premium Website</h2>
+        <p class="price">Starting at <strong>$1000</strong></p>
+        <p>5+ pages with advanced features like blog, portfolio, or gallery. Includes interactive forms and ongoing support.</p>
+      </div>
     </section>
 
-    <section>
-      <h3>Premium Website</h3>
-      <p>A complete solution for businesses that want to make a strong online impact. Includes 5+ pages, advanced features such as galleries, blogs, or portfolios, and interactive forms to capture customer inquiries. Ongoing support options available to keep your site fresh and fully functional.</p>
-      <a href="contact.html" class="button">Get a Quote</a>
-    </section>
+    <p class="disclaimer"><em>*Prices are starting points. Final pricing may change depending on features and customization.</em></p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Eden Studios. All rights reserved.</p>
+    <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
 </body>
 </html>
