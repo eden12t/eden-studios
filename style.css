@@ -231,3 +231,48 @@ body {
 .disclaimer {
   color: #aaa;
 }
+
+/* ===== Dark Background, White Cards ===== */
+body {
+  background: #222;
+  color: #fff;
+}
+
+.hero {
+  background: #222;
+  color: #fff;
+}
+
+.packages-grid {
+  background: #222;
+  padding: 60px 20px;
+}
+
+.package-card {
+  background: #fff;       /* white cards */
+  color: #111;            /* dark text inside cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.package-card h2 {
+  color: #111;
+}
+
+.price {
+  color: #00ccaa;
+}
+
+.disclaimer {
+  color: #aaa;
+}
+
+/* Contact links teal */
+.package-card a {
+  color: #00ccaa;
+  text-decoration: none;
+  font-weight: bold;
+}
+.package-card a:hover {
+  text-decoration: underline;
+}
