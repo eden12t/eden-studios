@@ -389,3 +389,43 @@ body {
 .price {
   color: #00ccaa;         /* keep teal highlight */
 }
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
+  .btn {
+    width: 100%;              /* full width button */
+    max-width: 280px;
+    font-size: 1rem;
+    padding: 14px 20px;
+  }
+
+  /* Packages/Portfolio/Contact Cards */
+  .packages-grid {
+    flex-direction: column;   /* stack vertically */
+    gap: 20px;
+  }
+  .package-card {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
