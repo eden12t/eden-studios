@@ -447,3 +447,8 @@ body {
 .hero .btn {
   margin-bottom: 5px;    /* tiny gap before blocks */
 }
+
+/* ===== Ultra Tight Spacing: Navbar → Hero Heading ===== */
+.hero {
+  padding-top: 0px;    /* hero starts right under navbar */
+}
