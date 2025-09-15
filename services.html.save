@@ -1,0 +1,34 @@
+open -a TextEdit ~/Desktop/eden-studios/index.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Eden Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>What We Offer</h2>
+    <ul>
+      <li>⚡ High-performance websites tailored for visibility</li>
+      <li>📱 Fully responsive layouts for all devices</li>
+      <li>🌐 Custom-built online experiences</li>
+      <li>🎨 Unique visual identity and design solutions</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Eden Studios
+  </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+/* Header with dark gray gradient */
+header {
+  background: linear-gradient(135deg, #1c1c1c, #2b2b2b);
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+header h1 {
+  margin: 0 0 15px 0; /* adds space below title */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #00ffcc;
+}
+
+/* Sections flow naturally */
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+h2 {
+  margin-top: 0;
+  color: #00ffcc;
+}
+
+/* Buttons */
+a.button {
+  display: inline-block;
+  background: linear-gradient(135deg, #00ffcc, #1a708f);
+  color: #121212;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: transform 0.2s, background 0.3s;
+}
+a.button:hover {
+  background: linear-gradient(135deg, #1a708f, #002c73);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #0a0a0a;
+  color: #bbb;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
