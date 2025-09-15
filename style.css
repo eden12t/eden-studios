@@ -276,3 +276,38 @@ body {
 .package-card a:hover {
   text-decoration: underline;
 }
+
+/* ===== Outline Style Buttons ===== */
+.btn {
+  background: transparent;       /* no fill */
+  color: #00ccaa;                /* teal text */
+  border: 2px solid #00ccaa;     /* teal border */
+  padding: 16px 36px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #00ccaa;           /* fill teal on hover */
+  color: #fff;                   /* text switches to white */
+  box-shadow: 0 0 12px #00ccaa;
+}
+
+/* ===== Lighter Gray Cards ===== */
+.package-card {
+  background: #333;        /* lighter gray box */
+  color: #eee;             /* light gray text */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.package-card h2 {
+  color: #fff;             /* keep titles bright */
+}
+
+.price {
+  color: #00ccaa;
+}
