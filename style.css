@@ -355,3 +355,19 @@ body {
   border: 2px solid #00ccaa;
   transform: scale(1.05);
 }
+
+/* ===== Lighter Cards for Contrast ===== */
+.package-card {
+  background: #f0f0f0;   /* light gray card */
+  color: #111;           /* dark text inside */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.package-card h2 {
+  color: #000;           /* strong black for titles */
+}
+
+.price {
+  color: #00ccaa;        /* teal highlight stays */
+}
