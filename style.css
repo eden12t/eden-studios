@@ -438,3 +438,12 @@ body {
 .hero .btn {
   margin-bottom: 15px;    /* small gap before blocks */
 }
+
+/* ===== Ultra Tight Spacing Below Hero ===== */
+.hero {
+  padding-bottom: 0px;   /* remove extra space */
+}
+
+.hero .btn {
+  margin-bottom: 5px;    /* tiny gap before blocks */
+}
