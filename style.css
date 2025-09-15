@@ -4,6 +4,9 @@ body {
   background: #111;
   color: white;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -40,10 +43,11 @@ h2 {
 
 main {
   padding: 20px;
+  flex: 1; /* fills leftover space to push footer down */
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: auto; /* ensures footer always sits at bottom */
   padding: 15px 0;
   text-align: center;
   font-size: 0.9rem;
