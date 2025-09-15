@@ -3,56 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eden Studios - Home</title>
+  <title>Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">eden studios</div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to Eden Studios</h1>
-      <p>We design and build fast, modern, and affordable websites for small businesses.</p>
-      <button class="btn" onclick="location.href='portfolio.html'">View Our Work</button>
-    </section>
+  <section class="hero">
+    <h1>Welcome to Eden Studios</h1>
+    <p>We build clean, modern, and mobile-friendly websites for small businesses.</p>
+    <a href="portfolio.html" class="btn">View Our Work</a>
+  </section>
 
-    <!-- About Section -->
-    <section class="about-grid">
-      <div class="about-text">
-        <h2>About Us</h2>
-        <p>
-          At Eden Studios, we specialize in building websites that are clean, responsive, and tailored to your business. 
-          Whether you’re just starting or looking to refresh your brand, we make the process simple and affordable.
-        </p>
-      </div>
-      <div class="about-list">
-        <p>✔️ Mobile-friendly design</p>
-        <p>✔️ Optimized for Google search</p>
-        <p>✔️ Transparent pricing</p>
-        <p>✔️ Ongoing support options</p>
-      </div>
-    </section>
-  </main>
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Eden Studios helps small businesses establish an online presence through professional web design that is affordable, responsive, and future-proof.</p>
+  </section>
 
   <footer>
-    <p>© 2025 Eden Studios. All rights reserved.</p>
+    <p>&copy; 2025 Eden Studios. All rights reserved.</p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("active");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
