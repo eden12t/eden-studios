@@ -34,7 +34,7 @@ nav a:hover {
 section {
   padding: 40px 20px;
   margin: 20px auto;
-  max-width: 1200px;   /* expanded for fullscreen */
+  max-width: 1200px;
 }
 
 section h2 {
@@ -107,13 +107,13 @@ footer {
   }
 
   nav a {
-    display: block;
-    margin: 8px 0;
+    display: block;        /* stack links vertically */
+    margin: 10px 0;
   }
 
   section {
-    padding: 20px 15px;
-    margin: 10px auto;
+    padding: 15px 12px;    /* tighter spacing */
+    margin: 8px auto;
   }
 
   section h2 {
@@ -124,7 +124,8 @@ footer {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
-    font-size: 1.2em;   /* larger button text */
-    padding: 14px 0;    /* taller button size */
+    font-size: 1.3em;      /* bigger button text */
+    padding: 16px 0;       /* taller buttons */
+    border-radius: 8px;    /* rounder corners for touch */
   }
 }
