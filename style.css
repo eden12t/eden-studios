@@ -196,3 +196,38 @@ footer{color:#777;text-align:center;padding:16px}
   background: #222;
   color: #fff;
 }
+
+/* ===== Dark Mode Layout ===== */
+body {
+  background: #222;
+  color: #fff;
+}
+
+.hero {
+  background: #222;
+  color: #fff;
+}
+
+.packages-grid {
+  background: #222;   /* match hero */
+  padding: 60px 20px;
+}
+
+.package-card {
+  background: #333;   /* slightly lighter so cards stand out */
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.package-card h2 {
+  color: #fff;
+}
+
+.price {
+  color: #00ccaa;
+}
+
+.disclaimer {
+  color: #aaa;
+}
