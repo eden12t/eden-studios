@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Eden Studios</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-    <div class="nav-left">
-      <a href="index.html" class="logo">eden studios</a>
-    </div>
+    <a href="index.html" class="logo">eden studios</a>
     <ul class="nav-right">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -21,14 +19,56 @@
     </ul>
   </nav>
 
-  <section class="page-section">
-    <h2>Our Work</h2>
-    <p>Here are examples of projects we’ve built for clients across different industries.</p>
-    <p>[Add portfolio images and descriptions here]</p>
+  <section class="portfolio-hero">
+    <h1>Our Work</h1>
+    <p>A selection of our recent projects.</p>
+    <div class="portfolio-filters">
+      <button class="active">All</button>
+      <button>Web Design</button>
+      <button>E-Commerce</button>
+      <button>UI/UX</button>
+    </div>
   </section>
 
+  <section class="portfolio-grid">
+    <div class="project-card">
+      <div class="thumb"></div>
+      <h3>Project One</h3>
+      <p>Web Design</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb"></div>
+      <h3>Project Two</h3>
+      <p>UI/UX</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb"></div>
+      <h3>Project Three</h3>
+      <p>E-Commerce</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb"></div>
+      <h3>Project Four</h3>
+      <p>Web Design</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb"></div>
+      <h3>Project Five</h3>
+      <p>E-Commerce</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb"></div>
+      <h3>Project Six</h3>
+      <p>UI/UX</p>
+    </div>
+  </section>
+
+  <div class="portfolio-cta">
+    <a href="contact.html" class="cta-btn-outline">Start Your Project</a>
+  </div>
+
   <footer>
-    <p>&copy; 2025 Eden Studios. All rights reserved.</p>
+    <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
 </body>
 </html>
