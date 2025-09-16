@@ -314,3 +314,13 @@ footer {
     flex: 1 1 100%;
   }
 }
+
+/* Special hover effect for Get a Quote button */
+form .cta-btn {
+  transition: transform 0.2s, background 0.3s;
+}
+
+form .cta-btn:hover {
+  background: #333;   /* darker black */
+  transform: scale(1.05); /* slight grow */
+}
