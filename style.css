@@ -17,3 +17,17 @@ section{padding:40px 20px}
 .card p{color:#ccc;line-height:1.4}
 footer{background:#2a2a2a;text-align:center;padding:15px}
 @media (max-width:768px){nav ul{flex-direction:column;gap:10px}.card{max-width:90%}}
+
+/* Ensure Services page cards display in 3 columns */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-grid .card {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
