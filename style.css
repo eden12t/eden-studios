@@ -116,3 +116,12 @@ footer {
   .card-grid .card { flex: 1 1 100%; min-height: 240px; }
   .project-card { flex: 1 1 100%; }
 }
+
+/* Homepage spacing fixes */
+body.home .page-section + .page-section {
+  margin-top: 20px; /* tighter spacing between sections */
+}
+
+body.home .page-section .cta-btn {
+  margin-top: 10px; /* tighter spacing above CTA button */
+}
