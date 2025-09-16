@@ -158,3 +158,15 @@ body.home .page-section + .page-section {
 .page-section .cta-btn {
   margin-top: 15px; /* button hugs text but still has breathing room */
 }
+
+/* Contact info links styled as text */
+.page-section a {
+  color: #111;              /* match body text */
+  text-decoration: none;    /* remove underline */
+  font-weight: bold;        /* emphasize */
+}
+
+.page-section a:hover {
+  color: #444;              /* subtle hover effect */
+  text-decoration: underline;
+}
