@@ -8,46 +8,40 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">eden studios</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="logo">eden studios</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Our Portfolio</h1>
-      <p>Projects that highlight our creativity, technical skill, and dedication to helping businesses shine online.</p>
-      <button class="btn" onclick="location.href='contact.html'">Get a Quote</button>
-    </section>
+  <section class="hero">
+    <h1>Our Work</h1>
+    <p>Here are examples of what we’ve built for clients.</p>
+  </section>
 
-    <section class="packages-grid">
-      <div class="package-card">
-        <h2>Custom Spotify Widget</h2>
-        <p>A desktop widget built with Electron that integrates Spotify playback, always-on-top controls, and a sleek design.</p>
-      </div>
-      <div class="package-card">
-        <h2>PlainTerm AI</h2>
-        <p>A terminal-style app that turns plain text into runnable code, designed with a hacker-aesthetic interface.</p>
-      </div>
-      <div class="package-card">
-        <h2>GQ Cases</h2>
-        <p>An e-commerce website prototype for custom phone cases, featuring clean layouts and easy navigation.</p>
-      </div>
-      <div class="package-card">
-        <h2>DJ Orion Website</h2>
-        <p>A modern, mobile-friendly site built for a DJ, featuring event listings and a simple music showcase section.</p>
-      </div>
-    </section>
-  </main>
+  <section class="card-grid">
+    <div class="card">
+      <h3>DJ Orion</h3>
+      <p>A sleek website for a professional DJ showcasing events and mixes.</p>
+    </div>
+    <div class="card">
+      <h3>PlainTerm AI</h3>
+      <p>An experimental terminal-style web app turning text into code.</p>
+    </div>
+    <div class="card">
+      <h3>GQ Cases</h3>
+      <p>A modern storefront for selling custom phone cases online.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Eden Studios. All rights reserved.</p>
+    <p>&copy; 2025 Eden Studios. All rights reserved.</p>
   </footer>
 </body>
 </html>
