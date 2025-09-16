@@ -44,10 +44,6 @@ nav .logo {
   font-weight: 500;
 }
 
-.nav-right li a:hover {
-  text-decoration: underline;
-}
-
 /* Hero */
 .hero {
   text-align: center;
