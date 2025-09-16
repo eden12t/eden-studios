@@ -26,9 +26,14 @@ nav ul {
   padding: 0;
 }
 
-nav a {
+nav a,
+nav a:visited {
   color: #fff;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
 }
 
 nav a.active {
