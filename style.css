@@ -236,3 +236,27 @@ button.cta-btn:hover {
   form { width: 100%; }
   form input, form textarea { font-size: 16px; }
 }
+
+/* Hamburger base (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Mobile nav behavior */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  .nav-right.active { display: flex; }
+  .nav-right li { margin: 10px 0; }
+}
