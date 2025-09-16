@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eden Studios</title>
+  <title>Services - Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
     <a href="index.html" class="logo">eden studios</a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-right" id="nav-links">
+    <ul class="nav-right">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -19,11 +18,29 @@
     </ul>
   </nav>
 
-  <!-- Page-specific content goes here -->
+  <section class="page-section">
+    <h2>Our Services</h2>
+    <div style="margin: 20px 0; text-align:center;">
+      <a href="contact.html" class="cta-btn">Start Your Project</a>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Basic Website</h3>
+        <p>Simple and clean design to get your business online quickly.</p>
+      </div>
+      <div class="card">
+        <h3>Business Website</h3>
+        <p>Custom solutions with more pages, functionality, and branding.</p>
+      </div>
+      <div class="card">
+        <h3>E-Commerce</h3>
+        <p>Full online store with product pages, cart, and checkout system.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
-
-<script>n  const menuToggle = document.getElementById("menu-toggle");n  const navLinks = document.getElementById("nav-links");n  const navItems = navLinks.querySelectorAll("a");nn  // Toggle open/closen  menuToggle.addEventListener("click", () => {n    navLinks.classList.toggle("active");n    menuToggle.classList.toggle("open");n    menuToggle.textContent = menuToggle.classList.contains("open") ? "✕" : "☰";n  });nn  // Close menu after clicking a linkn  navItems.forEach(item => {n    item.addEventListener("click", () => {n      navLinks.classList.remove("active");n      menuToggle.classList.remove("open");n      menuToggle.textContent = "☰";n    });n  });n</script></body>
+</body>
 </html>
