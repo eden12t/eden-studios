@@ -25,12 +25,5 @@
     <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
-</body>
+<script>n  const menuToggle = document.getElementById("menu-toggle");n  const navLinks = document.getElementById("nav-links");n  const navItems = navLinks.querySelectorAll("a");nn  // Toggle open/closen  menuToggle.addEventListener("click", () => {n    navLinks.classList.toggle("active");n    menuToggle.classList.toggle("open");n    menuToggle.textContent = menuToggle.classList.contains("open") ? "✕" : "☰";n  });nn  // Close menu after clicking a linkn  navItems.forEach(item => {n    item.addEventListener("click", () => {n      navLinks.classList.remove("active");n      menuToggle.classList.remove("open");n      menuToggle.textContent = "☰";n    });n  });n</script></body>
 </html>
