@@ -170,3 +170,15 @@ body.home .page-section + .page-section {
   color: #444;              /* subtle hover effect */
   text-decoration: underline;
 }
+
+/* Contact info links styled as text, exclude CTA buttons */
+.page-section a:not(.cta-btn) {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-section a:not(.cta-btn):hover {
+  color: #444;
+  text-decoration: underline;
+}
