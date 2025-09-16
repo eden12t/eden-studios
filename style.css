@@ -34,12 +34,14 @@ nav .nav-right li a:hover::after { width: 100%; }
 }
 .hero h1 { font-size: 48px; margin-bottom: 20px; }
 .hero p { font-size: 18px; margin-bottom: 30px; color: #444; }
-.hero .cta-btn {
+
+/* CTA Button */
+.cta-btn {
   padding: 12px 24px; background: #111; color: #fff;
   text-decoration: none; font-weight: bold; border-radius: 4px;
-  transition: background 0.3s;
+  display: inline-block; transition: background 0.3s;
 }
-.hero .cta-btn:hover { background: #444; }
+.cta-btn:hover { background: #444; }
 
 /* Services Rectangles */
 .card-grid {
@@ -90,7 +92,7 @@ footer {
   overflow: hidden; text-align: left; transition: transform 0.3s;
 }
 .project-card:hover { transform: translateY(-5px); }
-.project-card .thumb { background: #ddd; height: 150px; }
+.project-card .thumb { background: #ddd; height: 150px; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#fff; }
 .project-card h3 { font-size: 18px; margin: 15px; }
 .project-card p { font-size: 14px; margin: 0 15px 15px; color: #666; }
 .portfolio-cta { text-align: center; margin-bottom: 60px; }
