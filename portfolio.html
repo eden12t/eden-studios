@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eden Studios</title>
+  <title>Portfolio - Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
     <a href="index.html" class="logo">eden studios</a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-right" id="nav-links">
+    <ul class="nav-right">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -19,11 +18,35 @@
     </ul>
   </nav>
 
-  <!-- Page-specific content goes here -->
+  <section class="portfolio-hero">
+    <h1>Our Work</h1>
+    <p>Some of the projects we’ve completed.</p>
+  </section>
+
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <div class="thumb" style="background:#1DB954;">Spotify Widget</div>
+      <h3>Spotify Widget</h3>
+      <p>Interactive music widget built for seamless integration.</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb" style="background:#333;">GQ Cases</div>
+      <h3>GQ Cases</h3>
+      <p>Stylish and durable cases designed with modern aesthetics.</p>
+    </div>
+    <div class="project-card">
+      <div class="thumb" style="background:#555;">DJ Website</div>
+      <h3>DJ Website</h3>
+      <p>Promotional website with music, event listings, and media.</p>
+    </div>
+  </div>
+
+  <div class="portfolio-cta">
+    <a href="contact.html" class="cta-btn">Start Your Project</a>
+  </div>
 
   <footer>
     <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
-
-<script>n  const menuToggle = document.getElementById("menu-toggle");n  const navLinks = document.getElementById("nav-links");n  const navItems = navLinks.querySelectorAll("a");nn  // Toggle open/closen  menuToggle.addEventListener("click", () => {n    navLinks.classList.toggle("active");n    menuToggle.classList.toggle("open");n    menuToggle.textContent = menuToggle.classList.contains("open") ? "✕" : "☰";n  });nn  // Close menu after clicking a linkn  navItems.forEach(item => {n    item.addEventListener("click", () => {n      navLinks.classList.remove("active");n      menuToggle.classList.remove("open");n      menuToggle.textContent = "☰";n    });n  });n</script></body>
+</body>
 </html>
