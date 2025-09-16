@@ -1,130 +1,77 @@
-body {
+/* Global Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background: #1a1a1a;
+  line-height: 1.6;
+  background: #111;
   color: #fff;
 }
 
 /* Navbar */
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
-  padding: 20px 30px;
+  background: #000;
+  padding: 15px 30px;
 }
 
-.logo {
-  font-weight: bold;
+nav .logo {
   font-size: 20px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
+  font-weight: bold;
   color: #fff;
   text-decoration: none;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  color: #00d1b2;
+nav .nav-right {
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h1 {
-  margin-bottom: 10px;
-}
-
-.hero p {
-  color: #ccc;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: 2px solid #00d1b2;
-  color: #00d1b2;
-  border-radius: 8px;
+nav .nav-right li a {
+  color: #fff;
   text-decoration: none;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.btn:hover {
-  background: #00d1b2;
-  color: #111;
+nav .nav-right li a:hover {
+  color: #f39c12;
 }
 
-/* Card grids (used on Services, Portfolio, Contact, FAQ) */
-.card-grid, .cards {
+/* Services cards */
+.card-grid {
   display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 20px;
-  padding: 40px 20px;
   flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
-/* Services page – force 3 columns */
 .card-grid .card {
   flex: 1 1 300px;
   max-width: 300px;
-  min-height: 260px;
-}
-
-/* Shared card styling */
-.card {
-  background: #2a2a2a;
+  background: #222;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,.4);
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 209, 178, 0.5);
-}
-
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #ccc;
-  line-height: 1.5;
-}
-
-/* About & Why Choose sections */
-.about, .why-choose {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
+  background: #000;
+  color: #fff;
   margin-top: 40px;
-  font-size: 14px;
-  color: #aaa;
 }
 
 /* Responsive tweaks */
@@ -134,12 +81,20 @@ footer {
     max-width: 45%;
   }
 }
+
 @media (max-width: 640px) {
   .card-grid .card {
     flex: 1 1 100%;
     max-width: 100%;
   }
-  nav ul {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-right {
+    margin-top: 10px;
     flex-direction: column;
     gap: 10px;
   }
