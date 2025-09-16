@@ -30,23 +30,28 @@ nav .nav-right li a:hover::after { width: 100%; }
 /* Hero Section */
 .hero {
   text-align: center; padding: 40px 20px;
-  max-width: 800px; margin: 0 auto;
+  max-width: 800px; margin: 0 auto 30px;
 }
 .hero h1 { font-size: 48px; margin-bottom: 20px; }
 .hero p { font-size: 18px; margin-bottom: 30px; color: #444; }
 
 /* CTA Button */
 .cta-btn {
-  padding: 12px 24px; background: #111; color: #fff;
-  text-decoration: none; font-weight: bold; border-radius: 4px;
-  display: inline-block; transition: background 0.3s;
+  padding: 12px 24px; 
+  background: #111; 
+  color: #fff !important; /* force white text */
+  text-decoration: none; 
+  font-weight: bold; 
+  border-radius: 4px;
+  display: inline-block; 
+  transition: background 0.3s;
 }
 .cta-btn:hover { background: #444; }
 
 /* Services Rectangles */
 .card-grid {
   display: flex; justify-content: center; align-items: stretch;
-  gap: 20px; margin: 60px auto; max-width: 1200px; padding: 0 20px; flex-wrap: wrap;
+  gap: 20px; margin: 40px auto; max-width: 1200px; padding: 0 20px; flex-wrap: wrap;
 }
 .card-grid .card {
   flex: 1 1 calc(33.333% - 20px);
@@ -60,14 +65,21 @@ nav .nav-right li a:hover::after { width: 100%; }
 .card-grid .card h3 { margin-bottom: 15px; }
 
 /* Page Sections */
-.page-section { max-width: 800px; margin: 60px auto; padding: 0 20px; text-align: center; }
-.page-section h2 { font-size: 32px; margin-bottom: 20px; }
-.page-section p { font-size: 18px; color: #444; margin-bottom: 15px; }
+.page-section { max-width: 800px; margin: 30px auto; padding: 0 20px; text-align: center; }
+.page-section h2 { font-size: 32px; margin-bottom: 10px; }
+.page-section p { font-size: 18px; color: #444; margin-bottom: 10px; }
+.page-section + .page-section { margin-top: 25px; }
 
-/* Homepage spacing fixes */
-body.home .page-section { margin-bottom: 0; } /* kill extra bottom margin */
-body.home .page-section + .page-section { margin-top: 20px; } /* tighter gap */
-body.home .page-section .cta-btn { margin-top: 10px; } /* button hugs text */
+/* Contact info links styled as text, exclude CTA buttons */
+.page-section a:not(.cta-btn) {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+.page-section a:not(.cta-btn):hover {
+  color: #444;
+  text-decoration: underline;
+}
 
 /* Footer */
 footer {
@@ -76,12 +88,12 @@ footer {
 }
 
 /* Portfolio */
-.portfolio-hero { text-align: center; padding: 60px 20px; }
+.portfolio-hero { text-align: center; padding: 40px 20px; margin-bottom: 20px; }
 .portfolio-hero h1 { font-size: 40px; margin-bottom: 10px; }
 .portfolio-hero p { color: #444; margin-bottom: 20px; }
 .portfolio-grid {
   display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-  max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;
+  max-width: 1200px; margin: 0 auto 40px; padding: 0 20px;
 }
 .project-card {
   flex: 1 1 calc(33.333% - 20px);
@@ -93,7 +105,7 @@ footer {
 .project-card .thumb { background: #ddd; height: 150px; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#fff; }
 .project-card h3 { font-size: 18px; margin: 15px; }
 .project-card p { font-size: 14px; margin: 0 15px 15px; color: #666; }
-.portfolio-cta { text-align: center; margin-bottom: 60px; }
+.portfolio-cta { text-align: center; margin-bottom: 40px; }
 .cta-btn-outline {
   padding: 12px 24px; border: 2px solid #111;
   background: transparent; color: #111;
@@ -113,72 +125,4 @@ footer {
   .hero h1 { font-size: 32px; }
   .card-grid .card { flex: 1 1 100%; min-height: 240px; }
   .project-card { flex: 1 1 100%; }
-}
-
-/* Homepage section spacing fix */
-body.home .page-section {
-  margin: 30px auto; /* reduced from 60px */
-}
-
-body.home .page-section + .page-section {
-  margin-top: 10px; /* very tight gap between sections */
-}
-
-/* Force homepage spacing to be tighter */
-body.home .page-section {
-  margin: 20px auto !important;
-}
-
-body.home .page-section + .page-section {
-  margin-top: 5px !important;
-}
-
-/* Global spacing optimization for all pages */
-.hero {
-  padding: 40px 20px;   /* reduced from ~60px */
-  margin-bottom: 30px;  /* less space before next section */
-}
-
-.page-section {
-  margin: 30px auto !important;  /* tighter overall section spacing */
-}
-
-.page-section h2 {
-  margin-bottom: 10px; /* headings closer to text */
-}
-
-.page-section p {
-  margin-bottom: 10px; /* paragraphs closer together */
-}
-
-.page-section + .page-section {
-  margin-top: 25px !important;  /* balanced spacing between sections */
-}
-
-.page-section .cta-btn {
-  margin-top: 15px; /* button hugs text but still has breathing room */
-}
-
-/* Contact info links styled as text */
-.page-section a {
-  color: #111;              /* match body text */
-  text-decoration: none;    /* remove underline */
-  font-weight: bold;        /* emphasize */
-}
-
-.page-section a:hover {
-  color: #444;              /* subtle hover effect */
-  text-decoration: underline;
-}
-
-/* Contact info links styled as text, exclude CTA buttons */
-.page-section a:not(.cta-btn) {
-  color: #111;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.page-section a:not(.cta-btn):hover {
-  color: #444;
-  text-decoration: underline;
 }
