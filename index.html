@@ -6,10 +6,11 @@
   <title>Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home">
+<body>
   <nav>
     <a href="index.html" class="logo">eden studios</a>
-    <ul class="nav-right">
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-right" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -18,33 +19,18 @@
     </ul>
   </nav>
 
-  <section class="hero">
-    <h1>Building Websites That Work</h1>
-    <p>Professional, clean, and modern websites tailored for your business needs.</p>
-    <a href="contact.html" class="cta-btn">Start Your Project</a>
-  </section>
-
-  <section class="page-section">
-    <h2>About Us</h2>
-    <p>Eden Studios specializes in creating modern, responsive websites that help businesses grow their online presence. Whether you’re a startup or an established brand, we deliver solutions tailored to your needs.</p>
-    <p>Our focus is on design, functionality, and performance — ensuring every project is both beautiful and effective.</p>
-  </section>
-
-  <section class="page-section">
-    <h2>Why Choose Us</h2>
-    <p>Affordable pricing designed to fit your budget.</p>
-    <p>Fast delivery so you can launch quickly.</p>
-    <p>Modern, responsive design that looks great on all devices.</p>
-    <p>Mobile-optimized for seamless user experience anywhere.</p>
-    <p>SEO-friendly structure to help you grow online visibility.</p>
-
-    <div style="margin-top:15px; text-align:center;">
-      <a href="contact.html" class="cta-btn">Start Your Project</a>
-    </div>
-  </section>
+  <!-- Page-specific content goes here -->
 
   <footer>
     <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
