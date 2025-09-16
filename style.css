@@ -260,3 +260,14 @@ button.cta-btn:hover {
   .nav-right.active { display: flex; }
   .nav-right li { margin: 10px 0; }
 }
+
+/* Smooth slide animation for mobile nav */
+.nav-right {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.nav-right.active {
+  max-height: 500px; /* enough for all menu links */
+}
