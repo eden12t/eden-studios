@@ -114,3 +114,12 @@ footer {
   .card-grid .card { flex: 1 1 100%; min-height: 240px; }
   .project-card { flex: 1 1 100%; }
 }
+
+/* Homepage section spacing fix */
+body.home .page-section {
+  margin: 30px auto; /* reduced from 60px */
+}
+
+body.home .page-section + .page-section {
+  margin-top: 10px; /* very tight gap between sections */
+}
