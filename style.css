@@ -1,5 +1,4 @@
-/* v5 CSS — restore original styling */
-
+/* v5 CSS — original stable styling before mobile optimization */
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +42,10 @@ nav .logo {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+}
+
+.nav-right li a:hover {
+  text-decoration: underline;
 }
 
 /* Hero */
@@ -131,6 +134,7 @@ nav .logo {
   text-align: center;
 }
 
+/* Footer */
 footer {
   background: #f9f9f9;
   padding: 20px;
