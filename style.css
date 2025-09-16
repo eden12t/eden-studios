@@ -113,7 +113,7 @@ nav .nav-right li a:hover::after {
   text-align: center;
 }
 
-/* Page Content Layout */
+/* Page Section Layout */
 .page-section {
   max-width: 800px;
   margin: 60px auto;
@@ -129,6 +129,7 @@ nav .nav-right li a:hover::after {
 .page-section p {
   font-size: 18px;
   color: #444;
+  margin-bottom: 15px;
 }
 
 /* Footer */
