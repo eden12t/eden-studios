@@ -132,3 +132,29 @@ body.home .page-section {
 body.home .page-section + .page-section {
   margin-top: 5px !important;
 }
+
+/* Global spacing optimization for all pages */
+.hero {
+  padding: 40px 20px;   /* reduced from ~60px */
+  margin-bottom: 30px;  /* less space before next section */
+}
+
+.page-section {
+  margin: 30px auto !important;  /* tighter overall section spacing */
+}
+
+.page-section h2 {
+  margin-bottom: 10px; /* headings closer to text */
+}
+
+.page-section p {
+  margin-bottom: 10px; /* paragraphs closer together */
+}
+
+.page-section + .page-section {
+  margin-top: 25px !important;  /* balanced spacing between sections */
+}
+
+.page-section .cta-btn {
+  margin-top: 15px; /* button hugs text but still has breathing room */
+}
