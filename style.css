@@ -8,8 +8,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: #111;
 }
 
 /* Navbar */
@@ -17,64 +17,131 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000;
-  padding: 15px 30px;
+  background: #fff;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
 }
 
 nav .logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 
 nav .nav-right {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
 }
 
 nav .nav-right li a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav .nav-right li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #111;
+  transition: width 0.3s;
+}
+
+nav .nav-right li a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.hero .cta-btn {
+  padding: 12px 24px;
+  background: #111;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
-nav .nav-right li a:hover {
-  color: #f39c12;
+.hero .cta-btn:hover {
+  background: #444;
 }
 
-/* Services cards */
+/* Services Cards */
 .card-grid {
   display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 40px auto;
+  margin: 60px auto;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .card-grid .card {
   flex: 1 1 300px;
   max-width: 300px;
-  background: #222;
+  background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #111;
+  text-align: center;
+}
+
+/* Page Content Layout */
+.page-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.page-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.page-section p {
+  font-size: 18px;
+  color: #444;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #000;
-  color: #fff;
-  margin-top: 40px;
+  background: #f5f5f5;
+  color: #111;
+  margin-top: 60px;
+  font-size: 14px;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 1000px) {
   .card-grid .card {
     flex: 1 1 45%;
@@ -83,11 +150,6 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .card-grid .card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
   nav {
     flex-direction: column;
     align-items: center;
@@ -96,6 +158,15 @@ footer {
   nav .nav-right {
     margin-top: 10px;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+  }
+
+  .card-grid .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
   }
 }
