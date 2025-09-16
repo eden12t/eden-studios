@@ -123,3 +123,12 @@ body.home .page-section {
 body.home .page-section + .page-section {
   margin-top: 10px; /* very tight gap between sections */
 }
+
+/* Force homepage spacing to be tighter */
+body.home .page-section {
+  margin: 20px auto !important;
+}
+
+body.home .page-section + .page-section {
+  margin-top: 5px !important;
+}
