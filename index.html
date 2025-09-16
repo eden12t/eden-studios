@@ -6,11 +6,10 @@
   <title>Eden Studios</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
   <nav>
     <a href="index.html" class="logo">eden studios</a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul class="nav-right" id="nav-links">
+    <ul class="nav-right">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -19,11 +18,33 @@
     </ul>
   </nav>
 
-  <!-- Page-specific content goes here -->
+  <section class="hero">
+    <h1>Building Websites That Work</h1>
+    <p>Professional, clean, and modern websites tailored for your business needs.</p>
+    <a href="contact.html" class="cta-btn">Start Your Project</a>
+  </section>
+
+  <section class="page-section">
+    <h2>About Us</h2>
+    <p>Eden Studios specializes in creating modern, responsive websites that help businesses grow their online presence. Whether you’re a startup or an established brand, we deliver solutions tailored to your needs.</p>
+    <p>Our focus is on design, functionality, and performance — ensuring every project is both beautiful and effective.</p>
+  </section>
+
+  <section class="page-section">
+    <h2>Why Choose Us</h2>
+    <p>Affordable pricing designed to fit your budget.</p>
+    <p>Fast delivery so you can launch quickly.</p>
+    <p>Modern, responsive design that looks great on all devices.</p>
+    <p>Mobile-optimized for seamless user experience anywhere.</p>
+    <p>SEO-friendly structure to help you grow online visibility.</p>
+
+    <div style="margin-top:15px; text-align:center;">
+      <a href="contact.html" class="cta-btn">Start Your Project</a>
+    </div>
+  </section>
 
   <footer>
     <p>© 2025 Eden Studios. All rights reserved.</p>
   </footer>
-
-<script>n  const menuToggle = document.getElementById("menu-toggle");n  const navLinks = document.getElementById("nav-links");n  const navItems = navLinks.querySelectorAll("a");nn  // Toggle open/closen  menuToggle.addEventListener("click", () => {n    navLinks.classList.toggle("active");n    menuToggle.classList.toggle("open");n    menuToggle.textContent = menuToggle.classList.contains("open") ? "✕" : "☰";n  });nn  // Close menu after clicking a linkn  navItems.forEach(item => {n    item.addEventListener("click", () => {n      navLinks.classList.remove("active");n      menuToggle.classList.remove("open");n      menuToggle.textContent = "☰";n    });n  });n</script></body>
+</body>
 </html>
