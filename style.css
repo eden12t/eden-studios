@@ -126,3 +126,22 @@ footer {
   .card-grid .card { flex: 1 1 100%; min-height: 240px; }
   .project-card { flex: 1 1 100%; }
 }
+
+/* Final CTA button fix */
+a.cta-btn,
+button.cta-btn {
+  background: #111 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+a.cta-btn:hover,
+button.cta-btn:hover {
+  background: #444 !important;
+  color: #fff !important;
+}
