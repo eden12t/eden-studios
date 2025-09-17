@@ -1,101 +1,67 @@
-/* v5 CSS — original stable styling before mobile optimization */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+cd ~/Desktop/eden-studios
 
+cat > style.css <<'EOF'
+/* ------------------------------
+   Global Site Styles
+------------------------------ */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background: #fff;
   color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background: #fff;
+  padding: 15px 20px;
+  background-color: #fff;
   border-bottom: 1px solid #eee;
 }
 
 nav .logo {
   font-weight: bold;
-  font-size: 1.3rem;
-  color: #000;
+  font-size: 1.2rem;
   text-decoration: none;
+  color: #000;
 }
 
-.nav-right {
-  display: flex;
+nav .nav-right {
   list-style: none;
-  gap: 20px;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-right li a {
+nav .nav-right li a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
 }
 
-/* Hero */
-.hero {
+footer {
+  background: #f9f9f9;
+  padding: 15px 0;
   text-align: center;
-  padding: 80px 20px;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  margin-top: auto;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  margin-bottom: 20px;
-  color: #555;
-  font-size: 1.2rem;
-}
-
-.cta-btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Sections */
-.page-section {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.page-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.page-section p {
-  margin-bottom: 15px;
-  color: #555;
-  font-size: 1.1rem;
-}
-
-/* Services Cards */
+/* ------------------------------
+   Services Page Styles
+------------------------------ */
 .card-grid {
   display: flex;
-  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .card {
@@ -103,39 +69,32 @@ nav .logo {
   border-radius: 8px;
   padding: 20px;
   flex: 1 1 250px;
-  max-width: 280px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   text-align: center;
+  transition: all 0.3s ease;
+  min-width: 0;
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* Portfolio */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+.card.highlight {
+  border: 2px solid #000;
+  background-color: #f0f8ff;
 }
 
-.project-card {
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-}
+.card h3 { margin-bottom: 10px; }
+.card p.description { margin-bottom: 15px; font-size: 0.95rem; color: #555; }
+.card p.price { font-size: 1.3rem; font-weight: bold; margin-top: 15px; }
 
-/* Footer */
-footer {
-  background: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #eee;
+@media (max-width: 768px) {
+  .card-grid { flex-direction: column; align-items: center; }
 }
+EOF
+
+# Commit and push the updated CSS
+git add style.css
+git commit -m "Update style.css: centralized Services page styles"
+git push origin main --force
