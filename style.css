@@ -1,97 +1,55 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-nav .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin-left: 1.5rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.services-main {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.services-title {
-  margin-bottom: 2rem;
-}
-
+/* Services page block container */
 .services-container {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.service-card {
-  background: #f9f9f9;
-  padding: 2rem 1rem;
-  width: 300px;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
+  gap: 20px;
+  margin: 40px 0;
 }
 
+/* Individual service cards */
+.service-card {
+  flex: 1;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push price to bottom */
+  min-height: 250px; /* Adjust for visual balance */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Highlighted Premium card */
+.service-card.premium {
+  background-color: #e8f0fe; /* subtle highlight */
+  border: 2px solid #000;
+}
+
+/* Hover effect */
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-.service-card.highlight {
-  background: #eaf0fc;
-  border: 2px solid #000;
-}
-
+/* Title */
 .service-card h2 {
-  margin-bottom: 1rem;
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
+/* Description */
 .service-card p {
-  flex: 1;
+  flex-grow: 1; /* ensures description takes up space */
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
-.price {
+/* Price aligned at bottom */
+.service-card .price {
   font-weight: bold;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #f1f1f1;
-  margin-top: 2rem;
+  font-size: 1.2em;
+  margin-top: auto; /* ensures price stays at bottom */
 }
