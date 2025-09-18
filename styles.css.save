@@ -68,4 +68,3 @@ nav ul li a.active {
         flex-direction: column;
         gap: 15px;
     }
-}
