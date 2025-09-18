@@ -1,65 +1,97 @@
-/* Services Page Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.services-main {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.services-title {
+  margin-bottom: 2rem;
+}
+
 .services-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin: 40px auto;
-  max-width: 1200px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .service-card {
   background: #f9f9f9;
-  padding: 30px 20px;
-  flex: 1;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem 1rem;
+  width: 300px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-.service-card p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.service-card .price {
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin-top: 20px;
-}
-
-/* Highlight the premium package */
-.service-card.premium {
-  background-color: #e6f0ff;
+.service-card.highlight {
+  background: #eaf0fc;
   border: 2px solid #000;
 }
 
-/* Hover effect */
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+.service-card h2 {
+  margin-bottom: 1rem;
 }
 
-/* Center "Our Services" heading */
-.center-heading {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 60px;
-  margin-bottom: 40px;
+.service-card p {
+  flex: 1;
 }
 
-/* Footer */
+.price {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
 footer {
   text-align: center;
-  padding: 20px;
-  background: #f2f2f2;
-  margin-top: 40px;
+  padding: 1rem;
+  background: #f1f1f1;
+  margin-top: 2rem;
 }
