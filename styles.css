@@ -1,0 +1,71 @@
+/* Navbar container */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: "Arial", sans-serif;
+    position: relative;
+    z-index: 100;
+}
+
+/* Brand / logo */
+nav .brand {
+    position: absolute;
+    left: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Navbar links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    padding-bottom: 3px;
+}
+
+/* Hover state */
+nav ul li a:hover {
+    color: #555;
+    border-bottom: 2px solid #555;
+}
+
+/* Active page */
+nav ul li a.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    nav .brand {
+        left: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
