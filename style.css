@@ -64,13 +64,14 @@ footer {
 
 .service-card {
   background: #f9f9f9;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   flex: 1 1 250px;
   max-width: 300px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 280px; /* taller to fit longer descriptions */
 }
 
 .service-card:hover {
